@@ -29,9 +29,9 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "decisions": "0.0.3",
-    "pkginfo": "~0.3.0",
-    "notifications": "~0.2.0"
+    "decisions": "~0.1.0",
+    "notifications": "~0.2.0",
+    "pkginfo": "~0.3.0"
   },
   "devDependencies": {
     "mocha": "1.x.x",
