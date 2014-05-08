@@ -1,0 +1,46 @@
+{
+  "name": "bixby-common",
+  "version": "0.0.0",
+  "description": "Common components of the Bixby framework.",
+  "keywords": [
+    "components",
+    "common",
+    "core",
+    "foundation",
+    "framework"
+  ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bixbyjs/bixby-common.git"
+  },
+  "bugs": {
+    "url": "http://github.com/bixbyjs/bixby-common/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "decisions": "0.0.3",
+    "pkginfo": "~0.3.0",
+    "notifications": "~0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  }
+}
