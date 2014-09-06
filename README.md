@@ -39,7 +39,7 @@ configuration file.
 
 #### Notifications
 
-```
+```javascript
 exports['@require'] = [ 'notifications' ];
 ```
 
