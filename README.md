@@ -10,8 +10,8 @@ files and logging facilities for informational and error messages.
 
 ## Usage
 
-To utilize Bixby.js' common suite of components, register them within the
-IoC container.
+To utilize Bixby.js' common suite of components, register them with the IoC
+container.
 
 ```javascript
 IoC.loader(require('bixby-common'));
@@ -25,7 +25,19 @@ exports['@require'] = [ 'settings' ];
 
 The settings component provides a mechanism to configure an application via
 configuration files, powered by the [`decisions`](https://github.com/NodePrime/node-decisions)
-module.
+module.  Configuration is preferably loaded from [TOML](https://github.com/toml-lang/toml)
+files, though [YAML](http://www.yaml.org/) and [JSON](http://json.org/) is
+supported as well.
+
+#### Logger
+
+```javascript
+exports['@require'] = [ 'logger' ];
+```
+
+The logger component provides a logger, powered by [`winston`](https://github.com/flatiron/winston).
+The log transport and related options are configurable within the application's
+configuration file.
 
 
 ## Tests
