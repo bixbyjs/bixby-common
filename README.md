@@ -24,7 +24,7 @@ exports['@require'] = [ 'settings' ];
 ```
 
 The settings component provides a mechanism to configure an application via
-configuration files, powered by the `[decisions](https://github.com/NodePrime/node-decisions)`
+configuration files, powered by the [`decisions`](https://github.com/NodePrime/node-decisions)
 module.
 
 
