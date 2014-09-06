@@ -1,11 +1,11 @@
 /* global describe, it, expect */
 
-var pkg = require('..');
+var common = require('..');
 
 describe('bixby-common', function() {
   
-  it('should export object', function() {
-    expect(pkg).to.be.an('object');
+  it('should export a function', function() {
+    expect(common).to.be.an('function');
   });
   
 });
