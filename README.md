@@ -34,7 +34,7 @@ exports['@require'] = [ 'logger' ];
 ```
 
 The logger component provides a logger, powered by [`winston`](https://github.com/flatiron/winston).
-The log transport and related options are configurable within the application's
+Log transports and related options are configurable within the application's
 configuration file.
 
 #### Notifications
