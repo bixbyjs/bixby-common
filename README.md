@@ -17,17 +17,15 @@ container.
 IoC.loader(require('bixby-common'));
 ```
 
-#### Settings
+#### Entity
 
 ```javascript
-exports['@require'] = [ 'settings' ];
+exports['@require'] = [ 'entity' ];
 ```
 
-The settings component provides a mechanism to configure an application via
-configuration files, powered by the [`decisions`](https://github.com/NodePrime/node-decisions)
-module.  Configuration is preferably loaded from [TOML](https://github.com/toml-lang/toml)
-files, though [YAML](http://www.yaml.org/) and [JSON](http://json.org/) is
-supported as well.
+The entity component provides a way to identify the application itself,
+including any optional aliases.  This is typically utilized for security-related
+purposes where stable identifiers are crucial.
 
 #### Logger
 
@@ -39,6 +37,28 @@ The logger component provides a logger, powered by [`winston`](https://github.co
 The log transport and related options are configurable within the application's
 configuration file.
 
+#### Notifications
+
+```
+exports['@require'] = [ 'notifications' ];
+```
+
+The notifications component provides a shared notification center, powered by
+[`notifications`](https://github.com/jaredhanson/node-notifications).  This is
+useful for broadcasting events within a process, allowing communication between
+fully decoupled subsystems.
+
+#### Settings
+
+```javascript
+exports['@require'] = [ 'settings' ];
+```
+
+The settings component provides a mechanism to configure an application via
+configuration files, powered by the [`decisions`](https://github.com/NodePrime/node-decisions)
+module.  Configuration is preferably loaded from [TOML](https://github.com/toml-lang/toml)
+files, though [YAML](http://www.yaml.org/) and [JSON](http://json.org/) are
+supported as well.
 
 ## Tests
 
