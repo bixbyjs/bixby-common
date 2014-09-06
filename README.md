@@ -68,5 +68,5 @@ supported as well.
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2014 NodePrime, Inc. <[http://www.nodeprime.com/](http://jaredhanson.net/)>
+Copyright (c) 2014 NodePrime, Inc. <[http://www.nodeprime.com/](http://jaredhanson.net/)>  
 Copyright (c) 2014 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
