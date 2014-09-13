@@ -31,8 +31,8 @@ purposes where stable identifiers are crucial.
 
 This component will read settings withing the `[entity]` block.
 
-  - `{string} id`  application identifier
-  - `{string[]} [aliases]`  additional application aliases
+  - `{string} id` - application identifier
+  - `{string[]} [aliases]` - additional application aliases
 
 ```
 [entity]
