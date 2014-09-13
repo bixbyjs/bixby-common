@@ -22,7 +22,7 @@ IoC.loader(require('bixby-common'));
   - [Entity](#entity)
   - [Logger](#logger)
   - [Notifications](#notifications)
-  - [Settings](#settings)
+  - [Settings](#settings-2)
 
 #### Entity
 
