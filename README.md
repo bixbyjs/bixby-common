@@ -29,6 +29,11 @@ purposes where stable identifiers are crucial.
 
 ###### Settings
 
+This component will read settings withing the `[entity]` block.
+
+  - `{string} id`  application identifier
+  - `{string[]} [aliases]`  additional application aliases
+
 ```
 [entity]
 id = "https://api.example.com/beepboop/v1"
