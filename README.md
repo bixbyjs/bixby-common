@@ -29,9 +29,9 @@ purposes where stable identifiers are crucial.
 
 ###### Settings
 
-This component will read settings withing the `[entity]` block.
+This component will read settings within the `[entity]` block.
 
-  - `{string} id` - application identifier
+  - `{string} [id]` - application identifier
   - `{string[]} [aliases]` - additional application aliases
 
 ```
@@ -49,6 +49,32 @@ exports['@require'] = [ 'logger' ];
 The logger component provides a logger, powered by [`winston`](https://github.com/flatiron/winston).
 Log transports and related options are configurable within the application's
 configuration file.
+
+###### Settings
+
+This component will read settings within the `[logger]` block.
+
+  - `{string} [level]` - logging level
+  - `{string|string[]} [transport]` - log transports
+  - `{string} [path]` - path to log file
+
+By default, the logger will use both "console" and "file" transports, with
+the following paths for log files:
+
+  - Linux: `/var/log/<package-name>.log`
+  - Mac OS X: `~/Library/Logs/<package-name>.log`
+
+```
+[logger]
+level = "debug"
+transport = "console"
+```
+
+```
+[logger]
+transport = "file"
+path = "/var/log/app.log"
+```
 
 #### Notifications
 
