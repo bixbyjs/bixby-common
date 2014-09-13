@@ -34,7 +34,7 @@ This component will read settings within the `[entity]` block.
   - `{string} [id]` - application identifier
   - `{string[]} [aliases]` - additional application aliases
 
-```
+```toml
 [entity]
 id = "https://api.example.com/beepboop/v1"
 aliases = [ "@api.example.com", "https://api.example.com/bebop/" ]
