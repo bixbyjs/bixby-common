@@ -17,6 +17,13 @@ container.
 IoC.loader(require('bixby-common'));
 ```
 
+### Components
+
+  - [Entity](#entity)
+  - [Logger](#logger)
+  - [Notifications](#notifications)
+  - [Settings](#settings)
+
 #### Entity
 
 ```javascript
