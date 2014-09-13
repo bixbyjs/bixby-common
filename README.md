@@ -64,13 +64,13 @@ the following paths for log files:
   - Linux: `/var/log/<package-name>.log`
   - Mac OS X: `~/Library/Logs/<package-name>.log`
 
-```
+```toml
 [logger]
 level = "debug"
 transport = "console"
 ```
 
-```
+```toml
 [logger]
 transport = "file"
 path = "/var/log/app.log"
