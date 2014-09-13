@@ -27,6 +27,14 @@ The entity component provides a way to identify the application itself,
 including any optional aliases.  This is typically utilized for security-related
 purposes where stable identifiers are crucial.
 
+##### Settings
+
+```
+[entity]
+id = "https://api.example.com/beepboop/v1"
+aliases = [ "@api.example.com", "https://api.example.com/bebop/" ]
+```
+
 #### Logger
 
 ```javascript
