@@ -24,7 +24,7 @@ IoC.loader(require('bixby-common'));
   - [Notifications](#notifications)
   - [Settings](#settings-2)
 
-#### Entity
+##### Entity
 
 ```javascript
 exports['@require'] = [ 'entity' ];
@@ -47,7 +47,7 @@ id = "https://api.example.com/beepboop/v1"
 aliases = [ "@api.example.com", "https://api.example.com/bebop/" ]
 ```
 
-#### Logger
+##### Logger
 
 ```javascript
 exports['@require'] = [ 'logger' ];
@@ -83,7 +83,7 @@ transport = "file"
 path = "/var/log/app.log"
 ```
 
-#### Notifications
+##### Notifications
 
 ```javascript
 exports['@require'] = [ 'notifications' ];
@@ -94,7 +94,7 @@ The notifications component provides a shared notification center, powered by
 useful for broadcasting events within a process, allowing communication between
 fully decoupled subsystems.
 
-#### Settings
+##### Settings
 
 ```javascript
 exports['@require'] = [ 'settings' ];
