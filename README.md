@@ -96,7 +96,7 @@ The notifications component provides a shared notification center, powered by
 useful for broadcasting events within a process, allowing communication between
 fully decoupled subsystems.
 
-##### Settings
+#### Settings
 
 ```javascript
 exports['@require'] = [ 'settings' ];
