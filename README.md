@@ -17,14 +17,16 @@ container.
 IoC.loader(require('bixby-common'));
 ```
 
-### Components
+### Table of Contents
+
+##### Components
 
   - [Entity](#entity)
   - [Logger](#logger)
   - [Notifications](#notifications)
   - [Settings](#settings-2)
 
-##### Entity
+#### Entity
 
 ```javascript
 exports['@require'] = [ 'entity' ];
@@ -47,7 +49,7 @@ id = "https://api.example.com/beepboop/v1"
 aliases = [ "@api.example.com", "https://api.example.com/bebop/" ]
 ```
 
-##### Logger
+#### Logger
 
 ```javascript
 exports['@require'] = [ 'logger' ];
@@ -83,7 +85,7 @@ transport = "file"
 path = "/var/log/app.log"
 ```
 
-##### Notifications
+#### Notifications
 
 ```javascript
 exports['@require'] = [ 'notifications' ];
