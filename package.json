@@ -39,7 +39,8 @@
   "devDependencies": {
     "mocha": "1.x.x",
     "chai": "1.x.x",
-    "mock-common": "git://github.com/bixbyjs/mock-common.git"
+    "mock-common": "git://github.com/bixbyjs/mock-common.git",
+    "proxyquire": "1.x.x"
   },
   "engines": {
     "node": "*"

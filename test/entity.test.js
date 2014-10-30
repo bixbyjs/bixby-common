@@ -10,6 +10,25 @@ describe('entity', function() {
     expect(entity).to.be.a('function');
   });
   
+  describe('creating with default id', function() {
+    var pathStub = {
+      dirname: function(p) {
+        if (p.indexOf('package.json') !== p.length - 12) { throw new Error('Unexpected path: ' + p); }
+        return '/tmp/runner';
+      }
+    }
+    
+    var settings = new decisions.Settings();
+    var logger = new common.Logger();
+    
+    var e = $require('../../lib/entity', { path: pathStub })(settings, logger);
+    
+    it('should create entity', function() {
+      expect(e.id).to.equal('file:///tmp/runner');
+      expect(e.aliases).to.be.undefined;
+    });
+  });
+  
   describe('creating with an id', function() {
     var settings = new decisions.Settings({ entity: { id: 'one' } });
     var logger = new common.Logger();
