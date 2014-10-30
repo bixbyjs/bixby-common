@@ -10,6 +10,14 @@ describe('entity', function() {
     expect(entity).to.be.a('function');
   });
   
+  it('should be annotated', function() {
+    expect(entity['@singleton']).to.equal(true);
+    expect(entity['@require']).to.be.an('array');
+    expect(entity['@require']).to.have.length(2);
+    expect(entity['@require'][0]).to.equal('settings');
+    expect(entity['@require'][1]).to.equal('logger');
+  });
+  
   describe('creating with default id', function() {
     var pathStub = {
       dirname: function(p) {
