@@ -14,7 +14,7 @@ To utilize Bixby.js' common suite of components, register them with the IoC
 container.
 
 ```javascript
-IoC.loader(require('bixby-common'));
+IoC.use(require('bixby-common'));
 ```
 
 ### Components
