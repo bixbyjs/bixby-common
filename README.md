@@ -17,7 +17,9 @@ container.
 IoC.use(require('bixby-common'));
 ```
 
-### Components
+### Table of Contents
+
+##### Components
 
   - [Entity](#entity)
   - [Logger](#logger)
@@ -36,7 +38,7 @@ purposes where stable identifiers are crucial.
 
 ###### Settings
 
-This component will read settings within the `[entity]` block.
+This component will read settings within the `[entity]` section.
 
   - `{string} [id]` - application identifier
   - `{string[]} [aliases]` - additional application aliases
@@ -59,7 +61,7 @@ configuration file.
 
 ###### Settings
 
-This component will read settings within the `[logger]` block.
+This component will read settings within the `[logger]` section.
 
   - `{string} [level]` - logging level
   - `{string|string[]} [transport]` - log transports
