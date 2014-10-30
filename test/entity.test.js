@@ -27,6 +27,11 @@ describe('entity', function() {
       expect(e.id).to.equal('file:///tmp/runner');
       expect(e.aliases).to.be.undefined;
     });
+    
+    it('should log messages', function() {
+      expect(logger.messages[0].level).to.equal('info');
+      expect(logger.messages[0].message).to.equal('Operating as entity: file:///tmp/runner');
+    });
   });
   
   describe('creating with an id', function() {
