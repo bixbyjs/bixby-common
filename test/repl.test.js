@@ -24,6 +24,8 @@ describe('repl', function() {
     it('should create repl', function() {
       expect(l).to.be.an('object');
       expect(l.start).to.be.a('function');
+      expect(l.prompt).to.be.a('function');
+      expect(l.expose).to.be.a('function');
     });
   });
   
