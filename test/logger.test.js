@@ -1,7 +1,7 @@
 /* global describe, it, expect */
 
 var logger = require('../lib/logger')
-   , decisions = require('decisions');
+  , decisions = require('decisions');
 
 
 describe('logger', function() {
