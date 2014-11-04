@@ -12,6 +12,7 @@ describe('bixby-common', function() {
     expect(common('entity')).to.be.a('function');
     expect(common('logger')).to.be.a('function');
     expect(common('notifications')).to.be.a('function');
+    expect(common('repl')).to.be.a('function');
     expect(common('settings')).to.be.a('function');
   });
   
