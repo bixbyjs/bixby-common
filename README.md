@@ -1,5 +1,11 @@
 # bixby-common
 
+[![Build](https://travis-ci.org/bixbyjs/bixby-common.png)](https://travis-ci.org/bixbyjs/bixby-common)
+[![Coverage](https://coveralls.io/repos/bixbyjs/bixby-common/badge.png)](https://coveralls.io/r/bixbyjs/bixby-common)
+[![Quality](https://codeclimate.com/github/bixbyjs/bixby-common.png)](https://codeclimate.com/github/bixbyjs/bixby-common)
+[![Dependencies](https://david-dm.org/bixbyjs/bixby-common.png)](https://david-dm.org/bixbyjs/bixby-common)
+
+
 This suite of components provides the common objects typically needed by any
 Node.js application, including settings that can be tuned via configuration
 files and logging facilities for informational and error messages.
