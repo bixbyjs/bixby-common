@@ -109,7 +109,7 @@ exports['@require'] = [ 'settings' ];
 ```
 
 The settings component provides a mechanism to configure an application via
-configuration files, powered by the [`decisions`](https://github.com/NodePrime/node-decisions)
+configuration files, powered by the [`decisions`](https://github.com/jaredhanson/node-decisions)
 module.  Configuration is preferably loaded from [TOML](https://github.com/toml-lang/toml)
 files, though [YAML](http://www.yaml.org/) and [JSON](http://json.org/) are
 supported as well.
@@ -122,5 +122,4 @@ supported as well.
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2014 NodePrime, Inc. <[http://www.nodeprime.com/](http://www.nodeprime.com/)>  
 Copyright (c) 2014 Jared Hanson <[http://www.jaredhanson.net/](http://www.jaredhanson.net/)>
