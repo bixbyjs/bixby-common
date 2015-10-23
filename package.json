@@ -34,7 +34,6 @@
     "deep-get-set": "~0.1.1",
     "log": "^1.4.0",
     "mkdirp": "~0.5.0",
-    "notifications": "~0.2.0",
     "path-os": "~0.1.0",
     "pkginfo": "~0.3.0",
     "winston": "~0.7.3"
