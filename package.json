@@ -34,7 +34,8 @@
     "deep-get-set": "~0.1.1",
     "log": "^1.4.0",
     "path-os": "~0.1.0",
-    "pkginfo": "~0.3.0"
+    "pkginfo": "~0.3.0",
+    "properties": "^1.2.1"
   },
   "devDependencies": {
     "mocha": "1.x.x",
