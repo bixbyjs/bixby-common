@@ -21,10 +21,11 @@
   "bugs": {
     "url": "http://github.com/bixbyjs/bixby-common/issues"
   },
+  "license": "MIT",
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
+      "url": "http://opensource.org/licenses/MIT"
     }
   ],
   "main": "./lib",
@@ -38,8 +39,9 @@
     "properties": "^1.2.1"
   },
   "devDependencies": {
-    "mocha": "1.x.x",
-    "chai": "1.x.x",
+    "make-node": "0.3.x",
+    "mocha": "2.x.x",
+    "chai": "3.x.x",
     "mock-common": "git://github.com/bixbyjs/mock-common.git",
     "proxyquire": "1.x.x"
   },
