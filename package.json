@@ -25,7 +25,7 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "main": "./lib",
+  "main": "./index.js",
   "dependencies": {
     "bootable": "git://github.com/jaredhanson/bootable.git#next",
     "decisions": "~0.2.0",
