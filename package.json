@@ -1,13 +1,10 @@
 {
   "name": "bixby-common",
   "version": "0.1.2",
-  "description": "Common components of the Bixby framework.",
+  "description": "Common components for Bixby.js.",
   "keywords": [
     "components",
-    "common",
-    "core",
-    "foundation",
-    "framework"
+    "common"
   ],
   "author": {
     "name": "Jared Hanson",
