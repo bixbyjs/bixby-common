@@ -1,6 +1,6 @@
 /* global describe, it, expect */
 
-var repl = require('../lib/repl');
+var repl = require('../xom/repl');
 
 
 describe('repl', function() {
