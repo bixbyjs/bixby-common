@@ -30,5 +30,5 @@ exports = module.exports = function() {
   return new Log();
 };
 
-exports['@singleton'] = true;
 exports['@implements'] = 'http://i.bixbyjs.org/Logger';
+exports['@singleton'] = true;

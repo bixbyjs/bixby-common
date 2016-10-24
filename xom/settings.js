@@ -150,5 +150,5 @@ exports = module.exports = function() {
   return settings;
 };
 
-exports['@singleton'] = true;
 exports['@implements'] = 'http://i.bixbyjs.org/Settings';
+exports['@singleton'] = true;
