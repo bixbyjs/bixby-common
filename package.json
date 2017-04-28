@@ -26,6 +26,13 @@
     }
   ],
   "main": "./index.js",
+  "assembly": {
+    "components": [
+      "logger",
+      "repl",
+      "settings"
+    ]
+  },
   "dependencies": {
     "bootable": "git://github.com/jaredhanson/bootable.git#next",
     "decisions": "~0.2.0",
