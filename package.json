@@ -25,7 +25,7 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "main": "./xom",
+  "main": "./app",
   "assembly": {
     "components": [
       "logger",
