@@ -1,31 +1,32 @@
 /* global describe, it, expect */
 
-var logger = require('../xom/logger');
+var factory = require('../app/logger');
 
 
 describe('logger', function() {
   
-  it('should export a function', function() {
-    expect(logger).to.be.a('function');
+  it('should export factory function', function() {
+    expect(factory).to.be.a('function');
   });
   
   it('should be annotated', function() {
-    expect(logger['@singleton']).to.equal(true);
+    expect(factory['@implements']).to.equal('http://i.bixbyjs.org/Logger');
+    expect(factory['@singleton']).to.equal(true);
   });
   
   describe('creating', function() {
-    var l = logger();
+    var logger = factory();
     
     it('should create logger', function() {
-      expect(l).to.be.an('object');
-      expect(l.debug).to.be.a('function');
-      expect(l.info).to.be.a('function');
-      expect(l.notice).to.be.a('function');
-      expect(l.warning).to.be.a('function');
-      expect(l.error).to.be.a('function');
-      expect(l.critical).to.be.a('function');
-      expect(l.alert).to.be.a('function');
-      expect(l.emergency).to.be.a('function');
+      expect(logger).to.be.an('object');
+      expect(logger.debug).to.be.a('function');
+      expect(logger.info).to.be.a('function');
+      expect(logger.notice).to.be.a('function');
+      expect(logger.warning).to.be.a('function');
+      expect(logger.error).to.be.a('function');
+      expect(logger.critical).to.be.a('function');
+      expect(logger.alert).to.be.a('function');
+      expect(logger.emergency).to.be.a('function');
     });
   });
   
