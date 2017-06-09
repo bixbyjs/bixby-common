@@ -14,20 +14,25 @@ describe('logger', function() {
     expect(factory['@singleton']).to.equal(true);
   });
   
-  describe('creating', function() {
-    var logger = factory();
+  
+  describe('Logger', function() {
     
-    it('should create logger', function() {
-      expect(logger).to.be.an('object');
-      expect(logger.debug).to.be.a('function');
-      expect(logger.info).to.be.a('function');
-      expect(logger.notice).to.be.a('function');
-      expect(logger.warning).to.be.a('function');
-      expect(logger.error).to.be.a('function');
-      expect(logger.critical).to.be.a('function');
-      expect(logger.alert).to.be.a('function');
-      expect(logger.emergency).to.be.a('function');
+    describe('constructing', function() {
+      var logger = factory();
+    
+      it('should conform to interface', function() {
+        expect(logger).to.be.an('object');
+        expect(logger.debug).to.be.a('function');
+        expect(logger.info).to.be.a('function');
+        expect(logger.notice).to.be.a('function');
+        expect(logger.warning).to.be.a('function');
+        expect(logger.error).to.be.a('function');
+        expect(logger.critical).to.be.a('function');
+        expect(logger.alert).to.be.a('function');
+        expect(logger.emergency).to.be.a('function');
+      });
     });
+    
   });
   
 });

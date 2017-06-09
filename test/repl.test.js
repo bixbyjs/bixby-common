@@ -13,17 +13,22 @@ describe('repl', function() {
     expect(factory['@singleton']).to.equal(true);
   });
   
-  describe('creating', function() {
-    var container = new Object();
+  
+  describe('REPL', function() {
     
-    var repl = factory(container);
+    describe('constructing', function() {
+      var container = new Object();
     
-    it('should create repl', function() {
-      expect(repl).to.be.an('object');
-      expect(repl.start).to.be.a('function');
-      expect(repl.prompt).to.be.a('function');
-      expect(repl.expose).to.be.a('function');
+      var repl = factory(container);
+    
+      it('should conform to interface', function() {
+        expect(repl).to.be.an('object');
+        expect(repl.start).to.be.a('function');
+        expect(repl.prompt).to.be.a('function');
+        expect(repl.expose).to.be.a('function');
+      });
     });
+    
   });
   
 });
