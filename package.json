@@ -42,10 +42,9 @@
     "properties": "^1.2.1"
   },
   "devDependencies": {
-    "make-node": "0.3.x",
-    "mocha": "2.x.x",
-    "chai": "3.x.x",
-    "mock-common": "git://github.com/bixbyjs/mock-common.git",
+    "make-node": "^0.3.0",
+    "mocha": "^3.4.2",
+    "chai": "^4.0.2",
     "proxyquire": "1.x.x"
   },
   "engines": {
