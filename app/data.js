@@ -1,4 +1,4 @@
-exports = module.exports = function(IoC, json, yaml, logger) {
+exports = module.exports = function(IoC, json, yaml, toml, logger) {
   var API = require('../lib/data');
   
   
@@ -8,6 +8,7 @@ exports = module.exports = function(IoC, json, yaml, logger) {
     .then(function loadBuiltIn(api) {
       api.use('application/json', 'json', json);
       api.use('text/yaml', 'yaml', yaml);
+      api.use('application/toml', 'toml', toml);
       
       return api;
     })
@@ -36,5 +37,6 @@ exports['@require'] = [
   '!container',
   './data/json',
   './data/yaml',
+  './data/toml',
   'http://i.bixbyjs.org/Logger'
 ];
