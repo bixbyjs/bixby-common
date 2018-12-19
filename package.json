@@ -28,6 +28,7 @@
   "main": "./app",
   "assembly": {
     "components": [
+      "data",
       "logger",
       "repl",
       "settings"
@@ -36,6 +37,7 @@
   "dependencies": {
     "decisions": "~0.2.0",
     "deep-get-set": "~0.1.1",
+    "js-yaml": "^3.12.0",
     "log": "^1.4.0",
     "path-os": "~0.1.0",
     "pkginfo": "~0.3.0",
