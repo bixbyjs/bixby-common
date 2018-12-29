@@ -17,7 +17,7 @@ exports = module.exports = function(Data) {
   
   file = decisions.resolve(path.join(dirname, pkg.name), Data.getExtensions());
   conf = new decisions.File(file);
-  conf.open();
+  conf.read();
   return conf;
 };
 

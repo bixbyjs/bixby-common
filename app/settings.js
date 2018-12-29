@@ -29,7 +29,7 @@
  * @returns {Settings}
  * @access public
  */
-exports = module.exports = function() {
+exports = module.exports = function(user, system, Data) {
   // Load modules.
   var decisions = require('decisions')
     , pkginfo = require('pkginfo')
@@ -42,8 +42,21 @@ exports = module.exports = function() {
   
   var approot = path.dirname(pkginfo.find(require.main));
   var ostype = os.type().toLowerCase();
-  var settings = decisions.createSettings();
+  //var settings = decisions.createSettings();
+  var settings = new decisions.Settings();
   
+  var file = decisions.resolve(path.join(approot, 'etc', 'settings'), Data.getExtensions());
+  var conf = new decisions.File(file);
+  conf.read();
+  
+  settings.use(conf);
+  settings.use(user);
+  settings.use(system);
+  
+  return settings;
+  
+  
+  // FIXME: Remove below here...
   var dirname = path.resolve(approot, 'etc')
     , exts = [ '.toml', '.yaml', '.json' ]
     , ext, i, len, file, data;
@@ -152,3 +165,8 @@ exports = module.exports = function() {
 
 exports['@implements'] = 'http://i.bixbyjs.org/Settings';
 exports['@singleton'] = true;
+exports['@require'] = [
+  './settings/user',
+  './settings/system',
+  'http://i.bixbyjs.org/data'
+];
