@@ -4,7 +4,7 @@ exports = module.exports = function(IoC, logger) {
   
   
   var registry = new Registry()
-    , modules = IoC.components('http://i.bixbyjs.org/IServiceModule');
+    , modules = IoC.components('http://i.bixbyjs.org/IService');
   
   return Promise.all(modules.map(function(m) { return m.create(); }))
     .then(function(impls) {
