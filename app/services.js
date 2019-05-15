@@ -9,8 +9,8 @@ exports = module.exports = function(IoC, logger) {
   return Promise.all(modules.map(function(m) { return m.create(); }))
     .then(function(impls) {
       impls.forEach(function(impl, i) {
-        logger.info('Loaded service: ' + components[i].a['@name']);
-        registry.use(components[i].a['@name'], impl);
+        logger.info('Loaded service: ' + modules[i].a['@name']);
+        registry.use(modules[i].a['@name'], impl);
       });
     })
     .then(function() {
