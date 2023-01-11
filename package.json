@@ -31,8 +31,7 @@
       "data",
       "logger",
       "repl",
-      "settings",
-      "services"
+      "settings"
     ]
   },
   "dependencies": {
